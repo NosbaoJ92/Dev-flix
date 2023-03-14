@@ -1,0 +1,1 @@
+window.alert("Bem-vindo a Dev-flix, aqui você encontrará diversos filmes e séries, dos mias atuais aos mais nostalgicos. Pegue uma pipoca e sua bebida de preferência e curta todos os títulos disponíveis em nosso site.");

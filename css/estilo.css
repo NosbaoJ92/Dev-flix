@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   background: #201b2c;
+}
+
+/* INÍCIO CABEÇALHO */
+
+.cabecalho-principal{
+    position: fixed;
+    
+    width: 100vw;
+    background-color: rgb(68, 154, 212);
+}
+
+.cabecalho-menu-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.cabecalho-menu{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: aliceblue;
+    transform: scale(100%);
+}
+
+.cabecalho-menu:hover{
+    text-shadow: 0px 8px 6px black;
+    transform: scale(120%);
+    transition: 0.5s;
+}
+
+
+/* INÍCIO CONTEÚDO */
+
+.conteudo-principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.tt-principal{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 100px #c8e4d68e;
+    margin-top: 70px;
+    margin-bottom: 5px;
+}
+
+
+/* INÍCIO CONTEÚDO INTERNO */
+
+#imgs{
+    margin: 10px;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.conteudo{
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 25px;
+    box-shadow: 0px 12px 25px -12px #c8e4d652;
+    transform: scale(100%);
+}
+
+.conteudo-top{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conteudo-vermais{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen  { .conteudo:hover{
+    transform: scale(110%);
+    transition: 1s;
+}
+
+.conteudo-bottom{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.conteudo > p{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 15px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.conteudo > h1{
+    width: 100%;
+    border-radius: 15px;
+    letter-spacing: 5px;
+    color: rgb(252, 252, 252);
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(68, 154, 212);
+    box-shadow: 0px 12px 40px -12px #44c5e652
+}
+
+.btn-vermais{
+    font-family: 'Bebas Neue', cursive;
+    color:  rgb(20, 49, 68);
+    font-size: 20px;
+    background-color: rgb(68, 154, 212);
+    margin: 15px;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 40px -12px rgba(13, 218, 218, 0.589);
+    cursor: pointer;
+    border: none;
+}
+.btn-vermais a{
+    text-decoration: none;
+    text-decoration-color: rgb(20, 49, 68);
+}
+
+@media only screen  and (max-width: 300px){
+    .cabecalho-menu-principal{
+        gap: 30;
+    }
+    .conteudo-principal > .conteudo-top, .conteudo-bottom{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        clear: all;
+     }
+     .tt-principal{
+        justify-content: center;
+        text-align: center;
+        font-size: 80px;
+     }
+}
+
+@media only screen  and (max-width: 600px){
+    .cabecalho-menu-principal{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .conteudo-principal > .conteudo-top, .conteudo-bottom{
+        width: 150%;
+        display: flex;
+        flex-direction: column;
+        
+     }
+     .tt-principal{
+        text-align: center;
+        font-size: 80px;
+     }
+}
+@media only screen  and (max-width: 900px){
+    .cabecalho-menu-principal{
+        gap: 30;
+    }
+    .conteudo-principal > .conteudo-top, .conteudo-bottom{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        zoom: none;
+     }
+     .tt-principal{
+        justify-content: center;
+        text-align: center;
+        font-size: 80px;
+     }
+}
+@media only screen  and (max-width: 1024px){
+    .cabecalho-menu-principal{
+        gap: 30;
+    }
+    .conteudo-principal > .conteudo-top, .conteudo-bottom{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        zoom: none;
+     }
+     .tt-principal{
+        justify-content: center;
+        text-align: center;
+        font-size: 80px;
+     }
+}
+}
